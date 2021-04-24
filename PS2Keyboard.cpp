@@ -680,16 +680,17 @@ void PS2Keyboard::begin(uint8_t data_pin, uint8_t irq_pin, const PS2Keymap_t &ma
   digitalWrite(data_pin, HIGH);
 #endif
 
-#ifdef CORE_INT_EVERY_PIN
+//#ifdef CORE_INT_EVERY_PIN
   irq_num = irq_pin;
+/*
 #else
   irq_num = digitalPinToInterrupt(irq_pin);
 #endif
-
+*/
   head = 0;
   tail = 0;
   if (irq_num < 255) {
-    attachInterrupt(irq_num, ps2interrupt, FALLING);
+    attachInterrupt(digitalPinToInterrupt(irq_num), ps2interrupt, FALLING);
   }
 }
 
