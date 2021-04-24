@@ -286,7 +286,7 @@ const PROGMEM PS2Keymap_t PS2Keymap_BE = {
 	0, 0, 'w', 's', 'q', 'z', PS2_e_ACUTE, 0,
 	0, 'c', 'x', 'd', 'e', '\'', '"', 0,
 	0, ' ', 'v', 'f', 't', 'r', '(', 0,
-	0, 'n', 'b', 'h', 'g', 'y', '§', 0,
+	0, 'n', 'b', 'h', 'g', 'y', PS2_SECTION_SIGN, 0,
 	0, 0, ',', 'j', 'u', PS2_e_GRAVE, '!', 0,
 	0, ';', 'k', 'i', 'o', PS2_a_GRAVE, PS2_c_CEDILLA, 0,
 	0, ':', '=', 'l', 'm', 'p', ')', 0,
